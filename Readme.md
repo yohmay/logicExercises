@@ -1,2 +1,2 @@
             
-            Exemplos práticos de conceitos iniciais da linguagem JavaScript.
+            Exemplos dos conceitos iniciais da linguagem JavaScript.
