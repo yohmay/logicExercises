@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<h1>Speedometer</h1>
+<script>
+    let name = prompt("Enter your name");
+    alert("Welcome, Mr. or Ms. " + name);
+
+    let speed = parseInt(prompt("Enter the speed you were driving (in km/h)"));
+
+    function checkSpeed() {
+        let maxSpeed = 80;
+
+        if (speed <= maxSpeed) {
+            console.log(speed <= maxSpeed);
+            document.write("You didn't receive a ticket.");
+        } else if (speed > maxSpeed && speed <= maxSpeed + 10) {
+            console.log(speed >= maxSpeed + 10);
+            document.write("You received a mild ticket.");
+        } else if (speed >= maxSpeed + 11 && speed <= maxSpeed + 20) {
+            console.log(speed >= maxSpeed + 20);
+            document.write("You received a serious ticket.");
+        } else if (speed > maxSpeed + 20) {
+            console.log(speed >= maxSpeed + 30);
+            document.write("You received a very serious ticket.");
+        }
+    }
+    checkSpeed();
+</script>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<h1>Hourly Wage</h1>
+<script>
+    let name = prompt("Enter your name");
+    alert("Welcome, Mr. or Ms. " + name);
+
+    let monthlySalary = prompt("Enter your Monthly Salary");
+    let hoursWorked = prompt("Enter how many hours you work");
+
+    if (monthlySalary && hoursWorked) {
+        let hourlyWage = monthlySalary / hoursWorked;
+        document.write("You earn: $" + hourlyWage + " per hour");
+    } else {
+        document.write("Please enter your monthly salary and the number of hours you work.");
+    }
+</script>
+
+</html>

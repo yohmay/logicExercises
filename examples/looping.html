@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<script>
+    //Loops + Lists
+    //Used to execute the same command multiple times.
+
+    let number = prompt("Which number would you like to multiply?");
+    let multiplier = prompt("Up to which number would you like to multiply?");
+
+    Multiplication(number, multiplier);
+
+    function Multiplication(number, multiplier) {
+        for (let index = 0; index <= multiplier; index++) {
+            document.write(number + "x" + index + "=" + (number * index) + "<br>");
+        }
+    }
+</script>
+
+</html>

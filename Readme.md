@@ -1,2 +1,2 @@
             
-            Exemplos dos conceitos iniciais da linguagem JavaScript.
+    This repository is a collection of simple JavaScript examples and exercises

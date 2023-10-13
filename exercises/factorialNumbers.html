@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<h1>Factorial Numbers</h1>
+<script>
+	let name = prompt("Enter your name");
+	alert("Welcome, Mr. or Ms. " + name);
+
+	let number = prompt("Enter a number");
+
+	function factorial(Value) {
+		if (Value < 0) {
+			document.write("The number should be positive and an integer.");
+		} else {
+			let result = 1;
+			for (let x = 1; x <= Value; x++) {
+				result = result * x;
+			}
+			document.write("The factorial of the number is: " + result);
+		}
+	}
+
+	factorial(number);
+</script>
+
+</html>
