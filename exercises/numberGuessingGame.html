@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<h1>Number Guessing Game</h1>
+<script>
+    let playerName = prompt("Enter your name");
+    alert("Welcome, Mr. or Ms. " + playerName);
+    alert("Think of a number between 1 and 10 and see if you can guess the generated value.");
+
+    let playerGuess = parseInt(prompt("Have you thought of a number? What do you think it is? (1 to 10)"));
+
+    function compareGuess(thoughtNumber) {
+        if (playerGuess > thoughtNumber) {
+            document.write("Your guess was higher than the generated value.");
+        } else {
+            document.write("Your guess was lower than the generated value.");
+        }
+    }
+
+    function generateNumber() {
+        let randomNumber = 7;
+        console.log(randomNumber);
+        if (playerGuess === randomNumber) {
+            document.write("Congratulations, you got it right!");
+        } else {
+            document.write("You missed!" + "<br>");
+            compareGuess(randomNumber);
+        }
+    }
+
+    generateNumber();
+</script>
+
+</html>
